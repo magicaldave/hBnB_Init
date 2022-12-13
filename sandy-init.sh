@@ -33,9 +33,4 @@ cd holbertonschool-AirBnB_clone_v4/
 # Set up the database
 cat web_flask/100-dump.sql | mysql
 # Dis is da sauce right here bois
-if [ "$2" ]; then
-    PROJ=$2
-else
-    PROJ=0
-fi
-~/sandy-run.sh $PROJ
+~/sandy-run.sh
