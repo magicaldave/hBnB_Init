@@ -6,7 +6,7 @@ Destroy it and recreate it if you've used it before.
 
 Run the script by executing the following:
 
-`sudo su -c "bash <(wget -qO- https://raw.githubusercontent.com/magicaldave/hBnB_Init/main/sandy-init.sh)"`
+`sudo su -c "bash <(wget -qO- https://raw.githubusercontent.com/magicaldave/hBnB_Init/main/sandy-init.sh)" root`
 
 Enter the username of the person who owns your AirBnB_v4 repository.
 
