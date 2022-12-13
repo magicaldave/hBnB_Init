@@ -22,6 +22,8 @@ export NODE_PATH=/usr/lib/node_modules
 
 # Go home
 cd
+# Grab the runner script
+wget https://raw.githubusercontent.com/magicaldave/hBnB_Init/main/sandy-run.sh
 # Start mySQL
 sudo service mysql start
 # Pull the repo
@@ -31,4 +33,5 @@ cd holbertonschool-AirBnB_clone_v4/
 # Set up the database
 cat web_flask/100-dump.sql | mysql
 # Dis is da sauce right here bois
-sudo su -c "bash <(wget -qO- https://raw.githubusercontent.com/magicaldave/hBnB_Init/main/sandy-run.sh)"
+../sandy-run.sh
+# sudo su -c "bash <(wget -qO- https://raw.githubusercontent.com/magicaldave/hBnB_Init/main/sandy-run.sh)"
