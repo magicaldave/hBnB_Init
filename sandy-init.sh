@@ -11,7 +11,7 @@ else
     rm -rf ~/holbertonschool-AirBnB_clone_v4
 fi
 if [ ! -e "$HOME/sandy-run.sh" ]; then
-    wget
+    wget https://raw.githubusercontent.com/magicaldave/hBnB_Init/main/sandy-run.sh
 fi
 apt-get update && apt-get upgrade
 curl -sL https://deb.nodesource.com/setup_14.x | sudo -E bash -
