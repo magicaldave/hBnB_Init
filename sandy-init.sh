@@ -3,7 +3,9 @@
 # Update, install dependencies, and autoremove
 if [ ! -d "$HOME/holbertonschool-AirBnB_clone_v4/" ]; then
     if [ ! "$1" ]; then
-	REPO=https://github.com/Coleraines13/holbertonschool-AirBnB_clone_v4.git
+	echo -n "Please enter your GitHub username: "
+	read USER
+	REPO=https://github.com/$USER/holbertonschool-AirBnB_clone_v4.git
     else
 	REPO=https://github.com/$1/holbertonschool-AirBnB_clone_v4.git
     fi

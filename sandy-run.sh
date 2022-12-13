@@ -4,7 +4,8 @@ cd ~/holbertonschool-AirBnB_clone_v4/
 if [ "$1" ]; then
     PROJ=$1
 else
-    PROJ=0
+    echo -n "Please enter what project you'd like to test: "
+    read PROJ
 fi
 
 if ([ ! -z $(pgrep -f "python3 -m api.v1.app") ]); then
