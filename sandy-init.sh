@@ -12,9 +12,7 @@ if [ ! -d "$HOME/holbertonschool-AirBnB_clone_v4/" ]; then
 else
     rm -rf ~/holbertonschool-AirBnB_clone_v4
 fi
-if [ ! -e "$HOME/sandy-run.sh" ]; then
-    wget https://raw.githubusercontent.com/magicaldave/hBnB_Init/main/sandy-run.sh
-fi
+
 apt-get update && apt-get upgrade
 curl -sL https://deb.nodesource.com/setup_14.x | sudo -E bash -
 apt-get install -y nodejs mysql-server python3-dev libmysqlclient-dev zlib1g-dev python3-lxml && apt autoremove
@@ -33,4 +31,4 @@ cd holbertonschool-AirBnB_clone_v4/
 # Set up the database
 cat web_flask/100-dump.sql | mysql
 # Dis is da sauce right here bois
-~/sandy-run.sh
+sudo su -c "bash <(wget -qO- https://raw.githubusercontent.com/magicaldave/hBnB_Init/main/sandy-run.sh)"
