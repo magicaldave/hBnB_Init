@@ -23,7 +23,7 @@ export NODE_PATH=/usr/lib/node_modules
 # Go home
 cd
 # Grab the runner script
-wget https://raw.githubusercontent.com/magicaldave/hBnB_Init/main/sandy-run.sh
+wget https://raw.githubusercontent.com/magicaldave/hBnB_Init/main/sandy-run.sh && chmod u+x sandy-run.sh
 # Start mySQL
 sudo service mysql start
 # Pull the repo
